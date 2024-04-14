@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+
+	<body>
+		<form class="orderForm">
+			<div>
+				<label for="ime">Ime:</label>
+				<input id="ime" type="text" placeholder="Unesite Vase ime" required />
+			</div>
+
+			<div>
+				<label for="adresa">Adresa:</label>
+				<input
+					id="adresa"
+					type="text"
+					placeholder="Unesite Vasu adresu"
+					reqiured
+				/>
+			</div>
+
+			<div>
+				<label for="email">Email:</label>
+				<input
+					id="email"
+					type="email"
+					placeholder="Unesite Vasu email adresu"
+					required/>
+			</div>
+
+			<div>
+				<label for="Grad">Izaberite grad:</label>
+				<select id="Grad">
+					<option disabled selected>Izaberite grad</option>
+					<option>Beograd</option>
+					<option>Novi Sad</option>
+					<option>Nis</option>
+					<option>Uzice</option>
+					<option>Ljubovija</option>
+				</select>
+			</div>
+
+			<article action="/action_page.php">
+				<p>Odaberite nacin placanja:</p>
+
+				<input id="kartica" type="radio" name="nacin placanja" value="Visa" />
+				<label for="kartica">Kreditnm Karticom</label><br />
+
+				<input id="pouzecem" type="radio" name="nacin placanja" value="Posta" />
+				<label for="pouzecem">Pouzecem</label>
+			</article>
+
+			<article>
+				<input id="Subscripton" type="checkbox" />
+				<label for="Subscripton">Zelim da dobijam mejlove sa ponudama</label>
+			</article>
+
+			<div>
+				<input type="submit" value="Posalji e-mail" />
+			</div>
+		</form>
+	</body>
+</html>
